@@ -13,11 +13,11 @@
 		F6A765C21F099BBB00D3CCD3 /* GFGeoHash.m in Sources */ = {isa = PBXBuildFile; fileRef = F6A765BB1F099BBB00D3CCD3 /* GFGeoHash.m */; };
 		F6A765C31F099BBB00D3CCD3 /* GFGeoHashQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = F6A765BD1F099BBB00D3CCD3 /* GFGeoHashQuery.m */; };
 		F6A765C41F099BBB00D3CCD3 /* GFQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = F6A765BF1F099BBB00D3CCD3 /* GFQuery.m */; };
+		F6A765CA1F0A0D3600D3CCD3 /* PokeAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6A765C91F0A0D3600D3CCD3 /* PokeAnnotation.swift */; };
 		F6C439E71F0990DE00337EFD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6C439E61F0990DE00337EFD /* AppDelegate.swift */; };
 		F6C439E91F0990DE00337EFD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6C439E81F0990DE00337EFD /* ViewController.swift */; };
 		F6C439EC1F0990DE00337EFD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F6C439EA1F0990DE00337EFD /* Main.storyboard */; };
 		F6C439EE1F0990DE00337EFD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F6C439ED1F0990DE00337EFD /* Assets.xcassets */; };
-		F6C439F11F0990DE00337EFD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F6C439EF1F0990DE00337EFD /* LaunchScreen.storyboard */; };
 		F6C439F91F09911200337EFD /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F6C439F81F09911200337EFD /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
@@ -41,12 +41,12 @@
 		F6A765BE1F099BBB00D3CCD3 /* GFQuery+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GFQuery+Private.h"; sourceTree = "<group>"; };
 		F6A765BF1F099BBB00D3CCD3 /* GFQuery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GFQuery.m; sourceTree = "<group>"; };
 		F6A765C51F099D8100D3CCD3 /* PokeFinder-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PokeFinder-Bridging-Header.h"; sourceTree = "<group>"; };
+		F6A765C91F0A0D3600D3CCD3 /* PokeAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokeAnnotation.swift; sourceTree = "<group>"; };
 		F6C439E31F0990DE00337EFD /* pokesearch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = pokesearch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6C439E61F0990DE00337EFD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F6C439E81F0990DE00337EFD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		F6C439EB1F0990DE00337EFD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F6C439ED1F0990DE00337EFD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		F6C439F01F0990DE00337EFD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F6C439F21F0990DE00337EFD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F6C439F81F09911200337EFD /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -119,6 +119,29 @@
 			path = Implementation;
 			sourceTree = "<group>";
 		};
+		F6A765C61F0A0CC100D3CCD3 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F6C439E81F0990DE00337EFD /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		F6A765C71F0A0CD200D3CCD3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F6A765C91F0A0D3600D3CCD3 /* PokeAnnotation.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F6A765C81F0A0CD700D3CCD3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		F6C439DA1F0990DE00337EFD = {
 			isa = PBXGroup;
 			children = (
@@ -141,12 +164,13 @@
 			isa = PBXGroup;
 			children = (
 				F6A765AE1F099BBB00D3CCD3 /* GeoFire */,
-				F6C439F81F09911200337EFD /* GoogleService-Info.plist */,
-				F6C439E61F0990DE00337EFD /* AppDelegate.swift */,
-				F6C439E81F0990DE00337EFD /* ViewController.swift */,
+				F6A765C71F0A0CD200D3CCD3 /* Model */,
+				F6A765C81F0A0CD700D3CCD3 /* View */,
+				F6A765C61F0A0CC100D3CCD3 /* Controller */,
 				F6C439EA1F0990DE00337EFD /* Main.storyboard */,
 				F6C439ED1F0990DE00337EFD /* Assets.xcassets */,
-				F6C439EF1F0990DE00337EFD /* LaunchScreen.storyboard */,
+				F6C439E61F0990DE00337EFD /* AppDelegate.swift */,
+				F6C439F81F09911200337EFD /* GoogleService-Info.plist */,
 				F6C439F21F0990DE00337EFD /* Info.plist */,
 				F6A765C51F099D8100D3CCD3 /* PokeFinder-Bridging-Header.h */,
 			);
@@ -216,7 +240,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F6C439F11F0990DE00337EFD /* LaunchScreen.storyboard in Resources */,
 				F6C439F91F09911200337EFD /* GoogleService-Info.plist in Resources */,
 				F6C439EE1F0990DE00337EFD /* Assets.xcassets in Resources */,
 				F6C439EC1F0990DE00337EFD /* Main.storyboard in Resources */,
@@ -279,6 +302,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F6A765C11F099BBB00D3CCD3 /* GFBase32Utils.m in Sources */,
+				F6A765CA1F0A0D3600D3CCD3 /* PokeAnnotation.swift in Sources */,
 				F6C439E91F0990DE00337EFD /* ViewController.swift in Sources */,
 				F6A765C21F099BBB00D3CCD3 /* GFGeoHash.m in Sources */,
 				F6C439E71F0990DE00337EFD /* AppDelegate.swift in Sources */,
@@ -297,14 +321,6 @@
 				F6C439EB1F0990DE00337EFD /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		F6C439EF1F0990DE00337EFD /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F6C439F01F0990DE00337EFD /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
